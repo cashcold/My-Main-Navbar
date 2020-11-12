@@ -1,0 +1,141 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8)
+}
+.mainNavbar{
+    margin-top: 1.5rem;
+}
+.logo img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    color: white;
+    
+}
+.main-nav a:hover{
+    background-color: rgb(255, 99, 8);
+    color: white;
+    font-size: bold;
+    border-bottom: 2px solid green;
+    border-top: 2px solid red;
+}
+.header{
+    padding: 20px;
+    margin-top: -1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+   
+}
+.main-nav{
+    width: 100%;
+    height: auto;
+    background-color: rgba(17, 17, 148, 0.815);
+}
+.header h1{
+    color: green;
+}
+.socailIcons i{
+    padding: 0 1rem;
+}
+.socailIcons i:hover{
+    background-color: rgb(255, 99, 8);
+    color: white;
+    cursor: pointer;
+}
+.loginInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+    grid-gap: 10px;
+    display: none;
+}
+.loginInfoWeb{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+    grid-gap: 10px;
+}
+
+
+
+.toggleIcon{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .main-nav ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .toogleBtn{
+        display: block;
+        margin-left: 25rem;
+    }
+    .header{
+        padding: 0.8rem 0;
+    }
+    .header h1{
+        color: green;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .socailIcons i{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .toggleIcon{
+        display: block;
+    }
+    .nav-links{
+        display: none;;
+    }
+    .logo img{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+    }
+    .toggleIcon img{
+        width: 80px;
+        padding: 1rem;
+    }
+    .main-nav{
+        margin-left: -15px;
+        width: 110%;
+        height: auto;
+        background-color: rgba(17, 17, 148, 0.815);
+    }
+    .socailIcons{
+        display: none;
+    }
+    .loginInfoWeb{
+        display: none;
+    }
+    .loginInfo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .welcomeText{
+        font-size: 2rem;
+        font-family: monospace;
+        font-size: bold;
+    }
+    
+}
